@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--  -->
+    <!-- Destinatário -->
+    <!--   -->
+
+    <TextView
+        android:id="@+id/to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/to_label"/>
+
+    <EditText
+        android:id="@+id/edit_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/to_hint"
+        android:layout_toRightOf="@id/to_label"
+        android:layout_alignParentRight="true"/>
+
+
+    <!--  -->
+    <!-- Botao para enviar -->
+    <!-- -->
+
+        <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/send"/>
+
+<!-- -->
+<!-- Login -->
+<!-- -->
+
+    <TextView
+        android:id="@+id/to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/to_label"
+        android:text="@string/to_login"/>
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_login"
+        android:layout_below="@id/to_label"
+        android:layout_toRightOf="@id/to_login"
+        android:layout_alignParentRight="true"/>
+
+    <!-- -->
+    <!-- Senha -->
+    <!-- -->
+
+    <TextView
+        android:id="@+id/to_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/to_login"
+        android:text="@string/to_senha"/>
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_senha"
+        android:layout_below="@id/to_login"
+        android:layout_toRightOf="@id/to_senha"
+        android:layout_alignParentRight="true"/>
+
+    <!---->
+    <!--    Div do assunto -->
+    <!---->
+
+    <TextView
+        android:id="@+id/to_assunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/to_senha"
+        android:text="@string/to_assunto"/>
+
+    <EditText
+        android:id="@+id/txtAssunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_assunto"
+        android:layout_below="@id/to_senha"
+        android:layout_toRightOf="@id/to_assunto"
+        android:layout_alignParentRight="true"/>
+
+    <!-- -->
+    <!-- Div da message -->
+    <!-- -->
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/message"
+        android:layout_below="@id/to_assunto"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

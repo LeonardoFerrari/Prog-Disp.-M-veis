@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:layout_weightandroid="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="52dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_label"/>
+
+        <EditText
+            android:id="@+id/txtTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/to_hint"/>
+    </LinearLayout>
+
+    <!---->
+    <!--    Div do login -->
+    <!---->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_login"/>
+
+        <EditText
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/h_login"/>
+    </LinearLayout>
+
+    <!---->
+    <!--    Div da senha -->
+    <!---->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_senha"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/h_senha"/>
+    </LinearLayout>
+
+    <!---->
+    <!--    Div do assunto -->
+    <!---->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_assunto"/>
+        <EditText
+            android:id="@+id/txtAssunto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/h_assunto"/>
+    </LinearLayout>
+
+    <!---->
+    <!--    Div da Mensagem -->
+    <!---->
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_weight="2"
+        android:hint="@string/message"
+        />
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/send"/>
+</LinearLayout>
